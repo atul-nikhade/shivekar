@@ -11,7 +11,7 @@ Rails.application.configure do
   config.eager_load = true
 
   # Full error reports are disabled and caching is turned on.
-  config.consider_all_requests_local       = false
+  config.consider_all_requests_local       = true
   config.action_controller.perform_caching = true
 
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
@@ -19,6 +19,16 @@ Rails.application.configure do
   # For large-scale production use, consider using a caching reverse proxy like
   # NGINX, varnish or squid.
   # config.action_dispatch.rack_cache = true
+
+
+  config.action_mailer.perform_deliveries = true
+  # Don't care if the mailer can't send.
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+
+  config.action_mailer.default_url_options = 
+      { :host => 'localhost:3000' }  #if it is local then 'localhost:3000'
+
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
@@ -76,4 +86,17 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+
+  # Email configuration
+  config.action_mailer.smtp_settings = {
+    :port           => 587,
+    :address        => 'smtp.gmail.com',
+    :user_name      => 'atul.resume.portfolio@gmail.com',
+    :password       => 'atul@9604',
+    :domain         => 'gmail.com',
+    :authentication => :plain,
+    :enable_starttls_auto => true
+  }
+  
 end

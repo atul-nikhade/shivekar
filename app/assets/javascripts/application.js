@@ -15,3 +15,7 @@
 //= require turbolinks
 //= require bootstrap-notify
 //= require_tree .
+
+
+
+$(".alert-success" ).fadeOut(3000);

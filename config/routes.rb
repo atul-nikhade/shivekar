@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   get 'home/index'
 
   root :to => "home#index"
+  post "home/send_mail"  
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
