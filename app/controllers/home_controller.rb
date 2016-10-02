@@ -4,12 +4,10 @@ class HomeController < ApplicationController
   end
 
   def send_mail
-  	p "*****222****#{params.inspect}********222*********"
   	UserResponseMailer.user_response(params).deliver
-    p "*****333****#{params.inspect}********333*********"
-    flash[:success] = 'Your message sent successfully to Atul. Thanks for your message. Keep in touch'
+    # flash[:success] = 'Your message sent successfully to Atul. Thanks for your message. Keep in touch'
     redirect_to :back
-  end	
+  end
 
  private
 
