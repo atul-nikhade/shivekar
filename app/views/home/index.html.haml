@@ -34,7 +34,7 @@
                 %li.active
                   = link_to "Home", root_path
                 %li
-                  = link_to "Clients"
+                  = link_to "Clients", clients_path
                 %li
                   = link_to "Features"
                 %li
@@ -181,7 +181,7 @@
                     / End Item Project
           .row
             .col-lg-12
-              %h4.heading Some Clients
+              %h4.heading Some of our big Clients
               .row
                 %section#projects
                   %ul#thumbs.portfolio
@@ -189,38 +189,38 @@
                     %li.col-lg-3.design{"data-id" => "id-0", "data-type" => "web"}
                       .item-thumbs
                         / Fancybox - Gallery Enabled - Title - Full Image
-                        %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/6.jpg", :title => "Work 1"}
+                        %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client1.jpg", :title => "Work 1"}
                           %span.overlay-img
                           %span.overlay-img-thumb.font-icon-plus
                         / Thumb Image and Description
-                        %img{:alt => "Quality Work", :src => "assets/6.jpg"}/
+                        %img{:alt => "Quality Work", :src => "assets/client1.jpg"}/
                     / End Item Project
                     / Item Project and Filter Name
                     %li.item-thumbs.col-lg-3.design{"data-id" => "id-1", "data-type" => "icon"}
                       / Fancybox - Gallery Enabled - Title - Full Image
-                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/7.jpg", :title => "Work 2"}
+                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client2.jpg", :title => "Work 2"}
                         %span.overlay-img
                         %span.overlay-img-thumb.font-icon-plus
                       / Thumb Image and Description
-                      %img{:alt => "Quality Work", :src => "/assets/7.jpg"}/
+                      %img{:alt => "Quality Work", :src => "/assets/client2.jpg"}/
                     / End Item Project
                     / Item Project and Filter Name
                     %li.item-thumbs.col-lg-3.photography{"data-id" => "id-2", "data-type" => "illustrator"}
                       / Fancybox - Gallery Enabled - Title - Full Image
-                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/8.jpg", :title => "Work 3"}
+                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client5.jpg", :title => "Work 3"}
                         %span.overlay-img
                         %span.overlay-img-thumb.font-icon-plus
                       / Thumb Image and Description
-                      %img{:alt => "Quality Work", :src => "/assets/8.jpg"}/
+                      %img{:alt => "Quality Work", :src => "/assets/client5.jpg"}/
                     / End Item Project
                     / Item Project and Filter Name
                     %li.item-thumbs.col-lg-3.photography{"data-id" => "id-2", "data-type" => "illustrator"}
                       / Fancybox - Gallery Enabled - Title - Full Image
-                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/9.jpg", :title => "Work 4"}
+                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client4.jpg", :title => "Work 4"}
                         %span.overlay-img
                         %span.overlay-img-thumb.font-icon-plus
                       / Thumb Image and Description
-                      %img{:alt => "Quality Work", :src => "/assets/9.jpg", :height => "720", :width => "1280"}/          
+                      %img{:alt => "Quality Work", :src => "/assets/client4.jpg", :height => "720", :width => "1280"}/          
       %footer
         .container
           .row
@@ -246,7 +246,7 @@
                   %li
                     = link_to "Home", root_path
                   %li
-                    = link_to "Clients", root_path
+                    = link_to "Clients", clients_path
                   %li
                     = link_to "Features", root_path
                   %li
