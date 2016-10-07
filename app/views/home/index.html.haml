@@ -31,7 +31,7 @@
                 %span> Span Engineering
             .navbar-collapse.collapse
               %ul.nav.navbar-nav
-                %li.active
+                %li
                   = link_to "Home", root_path
                 %li
                   = link_to "About Us", information_index_path
@@ -54,27 +54,22 @@
                     %img{:alt => "", :src => "/assets/1.jpg", :height => "400", :width => "1024"}
                     .flex-caption
                       %h3 Milling Machine
-                      %p Milling machines are cutting tools typically used to perform milling operations.They remove material by their movement within the machine
                   %li
                     %img{:alt => "", :src => "/assets/2.jpg", :height => "400", :width => "1024"}/
                     .flex-caption
                       %h3 Lathe Machine
-                      %p The lathe is a machine tool which holds the workpiece between two rigid and strong supports called centers or in a chuck or face plate which revolves.
                   %li
                     %img{:alt => "", :src => "/assets/3.jpg", :height => "400", :width => "1024"}/
                     .flex-caption
                       %h3 VMC Machine
-                      %p VMC is a machining center with its spindle in a vertical orientation. High-end VMCs are high-precision machines often used for tight-tolerance milling.
                   %li
                     %img{:alt => "", :src => "/assets/4.jpg", :height => "400", :width => "1024"}/
                     .flex-caption
                       %h3 TRAUB
-                      %p It is automatic lathe machine.
                   %li
                     %img{:alt => "", :src => "/assets/5.jpg", :height => "400", :width => "1024"}/
                     .flex-caption
                       %h3 Grinding Machine
-                      %p Grinding Machine is a type of machining using an abrasive wheel as the cutting tool. Each grain of abrasive on the wheel's surface cuts a small chip from the workpiece via shear deformation.
               / end slider
       %section.callaction
         .container
@@ -99,7 +94,7 @@
                       %p
                         We define quality as conformance to our Customer's needs, both internal and external; and conformance to all quality requirements.
                     .box-bottom
-                      %a{:href => "#"} Learn more
+                      = link_to "More Info", features_path
                 .col-lg-3
                   .box
                     .box-gray.aligncenter
@@ -109,7 +104,7 @@
                       %p
                         We manufactured the products in low cost with maintaining it's standard quality as per client requirements as compare to other manufacturers.
                     .box-bottom 
-                      %a{:href => "#"} Learn more
+                      = link_to "More Info", features_path
                 .col-lg-3
                   .box
                     .box-gray.aligncenter
@@ -119,7 +114,7 @@
                       %p
                         Making continuous improvement is a part of every day and every job - through the use of team participation and measurements in a company.
                     .box-bottom
-                      %a{:href => "#"} Learn more
+                      = link_to "More Info", features_path
                 .col-lg-3
                   .box
                     .box-gray.aligncenter
@@ -129,7 +124,7 @@
                       %p
                         Client satisafaction is our first priority. We got best feedback till date. We have also skilled work force to meet the highest quality of standards.
                     .box-bottom
-                      %a{:href => "#"} Learn more
+                      = link_to "More Info", features_path
           / divider
           .row
             .col-lg-12
@@ -235,7 +230,7 @@
                   Bhamboli, Tal - Khed, Dist - Pune
                 %p
                   %i.icon-phone
-                  8806315314 / 9763060085
+                  8806315314 / 9130140895
                   %br/
                   %i.icon-envelope-alt
                   spanengineering25@gmail.com
@@ -243,16 +238,16 @@
               .widget
                 %h5.widgetheading Pages
                 %ul.link-list
-                  %li
+                  %li.active
                     = link_to "Home", root_path
+                  %li
+                    = link_to "About Us", information_index_path
                   %li
                     = link_to "Clients", clients_path
                   %li
-                    = link_to "Features", root_path
+                    = link_to "Features", features_path
                   %li
-                    = link_to "Blog", root_path
-                  %li
-                    = link_to "Contact Us", contacts_path
+                    = link_to "Contact Us",contacts_path
             .col-lg-4
               .widget
                 %h5.widgetheading © Span Engineering 2016
@@ -265,16 +260,13 @@
                         %a{"data-placement" => "top", :href => "https://www.facebook.com/Span-Engineering-Pvt-Ltd-Chakan-521609734702691/", :title => "Facebook", :target => "_blank"}
                           %i.fa.fa-facebook
                       %li
-                        %a{"data-placement" => "top", :href => "#", :title => "Twitter"}
+                        %a{"data-placement" => "top", :href => "https://twitter.com/SpanEngineering", :title => "Twitter", :target => "_blank"}
                           %i.fa.fa-twitter
                       %li
-                        %a{"data-placement" => "top", :href => "#", :title => "Linkedin"}
+                        %a{"data-placement" => "top", :href => "https://in.linkedin.com/in/vishal-shivekar-97411812b", :title => "Linkedin", :target => "_blank"}
                           %i.fa.fa-linkedin
                       %li
-                        %a{"data-placement" => "top", :href => "#", :title => "Pinterest"}
-                          %i.fa.fa-pinterest
-                      %li
-                        %a{"data-placement" => "top", :href => "#", :title => "Google plus"}
+                        %a{"data-placement" => "top", :href => "https://plus.google.com/u/0/101736486493236478496", :title => "Google plus", :target => "_blank"}
                           %i.fa.fa-google-plus
                 %span Site Developed By
                 %a{:href => "https://www.facebook.com/atul.nikhade", :target => "_blank"} Atul Nikhade

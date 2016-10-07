@@ -1,11 +1,11 @@
 class UserResponseMailer < ApplicationMailer
 	
   def user_response(response)
-   @name = response[:Name]
-   @email = response[:Email]
-   @phone = response[:phone]
-   @message = response[:Message]  
-   mail(to: "atsnikhade@gmail.com", subject: 'Portfolio Visited')
+   @name = response[:name]
+   @email = response[:email]
+   @subject = response[:subject]
+   @message = response[:message]
+   mail(to: "spanengineering25@gmail.com", subject: 'Website Visited')
   end	
 
-end	
+end

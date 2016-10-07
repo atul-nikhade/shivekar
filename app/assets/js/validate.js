@@ -82,7 +82,7 @@ jQuery(document).ready(function($) {
 		
 			   $.ajax({
 			   type: "POST",
-			   url: "contact/contact.php",
+			   url: "home/send_mail",
 			   data: str,
 			   success: function(msg){
 			$("#sendmessage").addClass("show");

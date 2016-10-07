@@ -6,6 +6,7 @@ class HomeController < ApplicationController
   def send_mail
   	UserResponseMailer.user_response(params).deliver
     # flash[:success] = 'Your message sent successfully to Atul. Thanks for your message. Keep in touch'
+    p "******333******#{params.inspect}***********333**"
     redirect_to :back
   end
 
