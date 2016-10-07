@@ -1,14 +1,12 @@
 Rails.application.routes.draw do
 
-  get 'clients/index'
-
-  get 'clients/show'
-
   root :to => "home#index"
   post "home/send_mail"
 
   resources :contacts
   resources :clients
+  resources :features
+  resources :information
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

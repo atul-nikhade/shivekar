@@ -35,85 +35,94 @@
                   = link_to "Home", root_path
                 %li
                   = link_to "About Us", information_index_path
-                %li.active
-                  = link_to "Clients", clients_path
                 %li
+                  = link_to "Clients", clients_path
+                %li.active
                   = link_to "Features", features_path
                 %li
                   = link_to "Contact Us",contacts_path
+      / end header
+      %section.callaction
+        .container
+          .row
+            .col-lg-12
+              .big-cta
+                .cta-text
+                  %h2
+                    %span Why
+                    We are best?
       %section#content
         .container
-          .row.center
-            .col-lg-3
-              %h4.heading ISO Certificate
+          .row
+            .col-lg-12
               .row
-                %section#projects
-                  %ul#thumbs.portfolio
-                    / Item Project and Filter Name
-                    %li.col-lg-10.design{"data-id" => "id-0", "data-type" => "web"}
-                      .item-thumbs 
-                        / Fancybox - Gallery Enabled - Title - Full Image
-                        %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/certificate.jpg", :title => "Work 1"}
-                          %span.overlay-img
-                          %span.overlay-img-thumb.font-icon-plus
-                        / Thumb Image and Description
-                        %img{:alt => "Quality Work", :src => "assets/certificate.jpg"}/
-                   
-            .col-lg-9
-              %h4.heading Some of our big Clients
+                .col-lg-3
+                  .box
+                    .box-gray.aligncenter
+                      %h4 Quality Work
+                      .icon
+                        %i.fa.fa-desktop.fa-3x
+                      %p
+                        We define quality as conformance to our Customer's needs, both internal and external; and conformance to all quality requirements.
+                .col-lg-3
+                  .box
+                    .box-gray.aligncenter
+                      %h4 Low Cost
+                      .icon
+                        %i.fa.fa-pagelines.fa-3x
+                      %p
+                        We manufactured the products in low cost with maintaining it's standard quality as per client requirements as compare to other manufacturers.
+                .col-lg-3
+                  .box
+                    .box-gray.aligncenter
+                      %h4 Improvement
+                      .icon
+                        %i.fa.fa-edit.fa-3x
+                      %p
+                        Making continuous improvement is a part of every day and every job - through the use of team participation and measurements in a company.
+                .col-lg-3
+                  .box
+                    .box-gray.aligncenter
+                      %h4 Satisfaction
+                      .icon
+                        %i.fa.fa-smile-o.fa-3x
+                      %p
+                        Client satisafaction is our first priority. We got best feedback till date. We have also skilled work force to meet the highest quality of standards.
+          .row
+            .col-lg-12
               .row
-                %section#projects
-                  %ul#thumbs.portfolio
-                    / Item Project and Filter Name
-                    %li.col-lg-4.design{"data-id" => "id-0", "data-type" => "web"}
-                      .item-thumbs
-                        / Fancybox - Gallery Enabled - Title - Full Image
-                        %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client1.jpg", :title => "Work 1"}
-                          %span.overlay-img
-                          %span.overlay-img-thumb.font-icon-plus
-                        / Thumb Image and Description
-                        %img{:alt => "Quality Work", :src => "assets/client1.jpg"}/
-                    / End Item Project
-                    / Item Project and Filter Name
-                    %li.item-thumbs.col-lg-4.design{"data-id" => "id-1", "data-type" => "icon"}
-                      / Fancybox - Gallery Enabled - Title - Full Image
-                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client7.jpg", :title => "Work 2"}
-                        %span.overlay-img
-                        %span.overlay-img-thumb.font-icon-plus
-                      / Thumb Image and Description
-                      %img{:alt => "Quality Work", :src => "/assets/client7.jpg"}/
-                    / End Item Project
-                    / Item Project and Filter Name
-                    %li.item-thumbs.col-lg-4.photography{"data-id" => "id-2", "data-type" => "illustrator"}
-                      / Fancybox - Gallery Enabled - Title - Full Image
-                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client5.jpg", :title => "Work 3"}
-                        %span.overlay-img
-                        %span.overlay-img-thumb.font-icon-plus
-                      / Thumb Image and Description
-                      %img{:alt => "Quality Work", :src => "/assets/client5.jpg"}/
-                    / End Item Project
-                    / Item Project and Filter Name
-                    %li.item-thumbs.col-lg-4.photography{"data-id" => "id-2", "data-type" => "illustrator"}
-                      / Fancybox - Gallery Enabled - Title - Full Image
-                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client4.jpg", :title => "Work 4"}
-                        %span.overlay-img
-                        %span.overlay-img-thumb.font-icon-plus
-                      / Thumb Image and Description
-                      %img{:alt => "Quality Work", :src => "/assets/client4.jpg", :height => "720", :width => "1280"}/
-                    %li.item-thumbs.col-lg-4.photography{"data-id" => "id-2", "data-type" => "illustrator"}
-                      / Fancybox - Gallery Enabled - Title - Full Image
-                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client2.jpg", :title => "Work 4"}
-                        %span.overlay-img
-                        %span.overlay-img-thumb.font-icon-plus
-                      / Thumb Image and Description
-                      %img{:alt => "Quality Work", :src => "/assets/client2.jpg", :height => "720", :width => "1280"}/
-                    %li.item-thumbs.col-lg-4.photography{"data-id" => "id-2", "data-type" => "illustrator"}
-                      / Fancybox - Gallery Enabled - Title - Full Image
-                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client6.jpg", :title => "Work 4"}
-                        %span.overlay-img
-                        %span.overlay-img-thumb.font-icon-plus
-                      / Thumb Image and Description
-                      %img{:alt => "Quality Work", :src => "/assets/client6.jpg", :height => "720", :width => "1280"}/  
+                .col-lg-3
+                  .box
+                    .box-gray.aligncenter
+                      %h4 ISO Certified
+                      .icon
+                        %i.fa.fa-certificate.fa-3x
+                      %p
+                        We are ISO 9001:2015 certified company by The Governing Board of The Progressive International Certifications Limited in September, 2016.
+                .col-lg-3
+                  .box
+                    .box-gray.aligncenter
+                      %h4 Masters of Risk
+                      .icon
+                        %i.fa.fa-tasks.fa-3x
+                      %p
+                        The most successful manufacturers will be both agile in confronting risks and resilient in adapting to disruptive change - in effect using it to their advantage.
+                .col-lg-3
+                  .box
+                    .box-gray.aligncenter
+                      %h4 Innovators of New
+                      .icon
+                        %i.fa.fa-lightbulb-o.fa-3x
+                      %p
+                        The development of new products and services for new markets, as well as existing customers, will be a recurring theme for best-in-class performers.
+                .col-lg-3
+                  .box
+                    .box-gray.aligncenter
+                      %h4 Global Orientation
+                      .icon
+                        %i.fa.fa-globe.fa-3x
+                      %p
+                        Successful manufacturers will be global, even if they never manufacture outside nation. They will open their all processes to benefit around the world.
       %footer
         .container
           .row

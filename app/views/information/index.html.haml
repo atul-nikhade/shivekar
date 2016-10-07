@@ -33,87 +33,46 @@
               %ul.nav.navbar-nav
                 %li
                   = link_to "Home", root_path
-                %li
-                  = link_to "About Us", information_index_path
                 %li.active
+                  = link_to "About Us", information_index_path
+                %li
                   = link_to "Clients", clients_path
                 %li
                   = link_to "Features", features_path
                 %li
                   = link_to "Contact Us",contacts_path
+      / end header
+      %section#featured
+        / start slider
+        .container
+          .row
+            .col-lg-12
+              / Slider
+              #main-slider.flexslider
+                %ul.slides
+                  %li
+                    %img{:alt => "", :src => "/assets/info1.jpg", :height => "300", :width => "1024"}
+                  %li
+                    %img{:alt => "", :src => "/assets/info2.jpg", :height => "300", :width => "1024"}/
+                  %li
+                    %img{:alt => "", :src => "/assets/info3.jpg", :height => "300", :width => "1024"}/
+                  %li
+                    %img{:alt => "", :src => "/assets/info4.jpg", :height => "300", :width => "1024"}/
+              / end slider
+      %section.callaction
+        .container
+          .row
+            .col-lg-12
+              .big-cta
+                .cta-text
+                  %h2
+                    %span About Us
       %section#content
         .container
-          .row.center
-            .col-lg-3
-              %h4.heading ISO Certificate
-              .row
-                %section#projects
-                  %ul#thumbs.portfolio
-                    / Item Project and Filter Name
-                    %li.col-lg-10.design{"data-id" => "id-0", "data-type" => "web"}
-                      .item-thumbs 
-                        / Fancybox - Gallery Enabled - Title - Full Image
-                        %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/certificate.jpg", :title => "Work 1"}
-                          %span.overlay-img
-                          %span.overlay-img-thumb.font-icon-plus
-                        / Thumb Image and Description
-                        %img{:alt => "Quality Work", :src => "assets/certificate.jpg"}/
-                   
-            .col-lg-9
-              %h4.heading Some of our big Clients
-              .row
-                %section#projects
-                  %ul#thumbs.portfolio
-                    / Item Project and Filter Name
-                    %li.col-lg-4.design{"data-id" => "id-0", "data-type" => "web"}
-                      .item-thumbs
-                        / Fancybox - Gallery Enabled - Title - Full Image
-                        %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client1.jpg", :title => "Work 1"}
-                          %span.overlay-img
-                          %span.overlay-img-thumb.font-icon-plus
-                        / Thumb Image and Description
-                        %img{:alt => "Quality Work", :src => "assets/client1.jpg"}/
-                    / End Item Project
-                    / Item Project and Filter Name
-                    %li.item-thumbs.col-lg-4.design{"data-id" => "id-1", "data-type" => "icon"}
-                      / Fancybox - Gallery Enabled - Title - Full Image
-                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client7.jpg", :title => "Work 2"}
-                        %span.overlay-img
-                        %span.overlay-img-thumb.font-icon-plus
-                      / Thumb Image and Description
-                      %img{:alt => "Quality Work", :src => "/assets/client7.jpg"}/
-                    / End Item Project
-                    / Item Project and Filter Name
-                    %li.item-thumbs.col-lg-4.photography{"data-id" => "id-2", "data-type" => "illustrator"}
-                      / Fancybox - Gallery Enabled - Title - Full Image
-                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client5.jpg", :title => "Work 3"}
-                        %span.overlay-img
-                        %span.overlay-img-thumb.font-icon-plus
-                      / Thumb Image and Description
-                      %img{:alt => "Quality Work", :src => "/assets/client5.jpg"}/
-                    / End Item Project
-                    / Item Project and Filter Name
-                    %li.item-thumbs.col-lg-4.photography{"data-id" => "id-2", "data-type" => "illustrator"}
-                      / Fancybox - Gallery Enabled - Title - Full Image
-                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client4.jpg", :title => "Work 4"}
-                        %span.overlay-img
-                        %span.overlay-img-thumb.font-icon-plus
-                      / Thumb Image and Description
-                      %img{:alt => "Quality Work", :src => "/assets/client4.jpg", :height => "720", :width => "1280"}/
-                    %li.item-thumbs.col-lg-4.photography{"data-id" => "id-2", "data-type" => "illustrator"}
-                      / Fancybox - Gallery Enabled - Title - Full Image
-                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client2.jpg", :title => "Work 4"}
-                        %span.overlay-img
-                        %span.overlay-img-thumb.font-icon-plus
-                      / Thumb Image and Description
-                      %img{:alt => "Quality Work", :src => "/assets/client2.jpg", :height => "720", :width => "1280"}/
-                    %li.item-thumbs.col-lg-4.photography{"data-id" => "id-2", "data-type" => "illustrator"}
-                      / Fancybox - Gallery Enabled - Title - Full Image
-                      %a.hover-wrap.fancybox{"data-fancybox-group" => "gallery", :href => "/assets/client6.jpg", :title => "Work 4"}
-                        %span.overlay-img
-                        %span.overlay-img-thumb.font-icon-plus
-                      / Thumb Image and Description
-                      %img{:alt => "Quality Work", :src => "/assets/client6.jpg", :height => "720", :width => "1280"}/  
+          .row
+            %p Span Engineering Pvt. Ltd. is in the manufacturing of different types fabrication Works. These competitively priced Products are made from superior quality iron,Stainless Steel material sourced from reliable vendors located in different parts of India. These precision, reliable and high performance goods have helped us in creating a niche in the Fabrication industry.
+            Our company is indulging in research, production and quality control, to match the customer need and to expand its business in India & overseas market. To keep pace with the fast changing customer demands, Our company keeps itself updated with the latest technology to develop newer manufacturing methods.
+            We are ISO 9001:2015 certified company given by The Governing Board of Progressive International Certifications Limited for "Quality management System". Over the last many years, Span Engineering Pvt. Ltd  has succesfully completed many projects large and small, for clients nationwide.
       %footer
         .container
           .row

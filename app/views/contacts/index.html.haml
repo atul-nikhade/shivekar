@@ -35,16 +35,16 @@
                 %span> Span Engineering
             .navbar-collapse.collapse
               %ul.nav.navbar-nav
-                %li.active
+                %li
                   = link_to "Home", root_path
                 %li
-                  = link_to "Clients"
+                  = link_to "About Us", information_index_path
                 %li
-                  = link_to "Features"
+                  = link_to "Clients", clients_path
                 %li
-                  = link_to "Blog"
+                  = link_to "Features", features_path
                 %li
-                  = link_to "Contact",contacts_path
+                  = link_to "Contact Us",contacts_path  
       / end header
       %section#inner-headline
         .container
